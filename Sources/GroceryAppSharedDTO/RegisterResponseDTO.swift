@@ -2,6 +2,7 @@
 // https://docs.swift.org/swift-book
 
 import Foundation
+import Vapor
 
 public struct RegisterResponseDTO: Codable {
   public let error: Bool
@@ -13,3 +14,6 @@ public struct RegisterResponseDTO: Codable {
   }
 }
 
+extension RegisterResponseDTO: Content {
+  
+}

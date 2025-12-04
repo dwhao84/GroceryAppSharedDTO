@@ -2,6 +2,7 @@
 // https://docs.swift.org/swift-book
 
 import Foundation
+import Vapor
 
 public struct LoginResponseDTO: Codable {
   public let error: Bool
@@ -15,5 +16,9 @@ public struct LoginResponseDTO: Codable {
     self.token = token
     self.userID = userID
   }
+}
+
+extension LoginResponseDTO: Content {
+  
 }
 
