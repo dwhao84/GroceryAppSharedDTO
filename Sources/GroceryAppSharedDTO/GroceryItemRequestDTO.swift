@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct GroceryItemRequestDTO: Codable {
+public struct GroceryItemRequestDTO: Codable, Sendable {  // Add Sendable here
   public var title: String
   public var price: Double
   public var quantity: Int
